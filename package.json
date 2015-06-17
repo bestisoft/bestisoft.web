@@ -1,0 +1,27 @@
+{
+  "name": "bestisoft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "_site/index.html",
+  "scripts": {
+    "test": "echo \"no tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestisoft/bestisoft.src.git"
+  },
+  "author": "Bestisoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bestisoft/bestisoft.src/issues"
+  },
+  "homepage": "https://github.com/bestisoft/bestisoft.src#readme",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-bower-task": "",
+    "grunt-contrib-connect": "",
+    "grunt-contrib-copy": "",
+    "grunt-contrib-watch": "",
+    "grunt-exec": ""
+  }
+}
