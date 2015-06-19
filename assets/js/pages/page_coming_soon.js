@@ -1,12 +1,9 @@
 var PageComingSoon = function () {
 
     return {
-        
         //Coming Soon
         initPageComingSoon: function () {
-			var newYear = new Date(); 
-			newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
-			$('#defaultCountdown').countdown({until: newYear})
+          $('#defaultCountdown').countdown({until: new Date(2015, 8, 1)})
         }
 
     };
