@@ -1,59 +1,72 @@
 ---
 layout: home
 ---
-
- <!--=== Content Part ===-->
-    <div class="container content"> 
+<!--=== Content Part ===-->
+<div class="container content">
     
-        <div class="shadow-wrapper">
-            <div class="tag-box tag-box-v1 box-shadow shadow-effect-2">
-                <h2>One Template Endless Possibilities</h2>
-                <p>Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.</p>
+    <div class="shadow-wrapper">
+        <div class="tag-box tag-box-v1 box-shadow shadow-effect-2">
+            <h2>One Template Endless Possibilities</h2>
+            <p>Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.</p>
+        </div>
+    </div>
+    <div class="clearfix margin-bottom-40"></div>
+    <!-- Service Blocks -->
+    <div class="margin-bottom-20"></div>
+    <div class="row margin-bottom-40">
+        <div class="col-md-15 col-sm-3">
+            <div class="service-block service-block-default">
+                <img class="imgIcons" src="assets/img/goals.png">
+                <h2 class="heading-md"><div class="firstLetter">B</div>usiness goals</h2>
+                <p>First and foremost for us are your business goals</p>
             </div>
         </div>
-
+        <div class="col-md-15 col-sm-3">
+            <div class="service-block service-block-default">
+                <img class="imgIcons" src="assets/img/efficiency.png">
+                <h2 class="heading-md"><div class="firstLetter">E</div>fficiency</h2>
+                <p>Our solutions are efficient</p>
+            </div>
+        </div>
+        <div class="col-md-15 col-sm-3">
+            <div class="service-block service-block-default">
+                <img class="imgIcons" src="assets/img/scale.png">
+                <h2 class="heading-md"><div class="firstLetter">S</div>calability</h2>
+                <p>You can hire a dedicated team, or utilize resources as needed</p>
+            </div>
+        </div>
+        <div class="col-md-15 col-sm-3">
+            <div class="service-block service-block-default">
+                <img class="imgIcons" src="assets/img/team.png">
+                <h2 class="heading-md"><div class="firstLetter">T</div>echnical expertise</h2>
+                <p>Skilled developers with years of experience</p>
+            </div>
+        </div>
+        <div class="col-md-15 col-sm-3">
+            <div class="service-block service-block-default">
+                <img class="imgIcons" src="assets/img/leadership.png">
+                <h2 class="heading-md"><div class="firstLetter">I</div>nspiring</h2>
+                <p>Our leaders inspire confidence in clients and employees
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Service Blokcs -->
+    <div>
+        
+        <div class="headline"><h2>News</h2>
+            {% for post in site.posts %}
+                <div class="postNews">
+                    <div class="postDate">{{ post.date | date: "%b %-d, %Y" }}</div>
+                    <div class="postTitle">{{ post.title }}</div>
+                    <div class="postShort">{{ post.short }}</div>
+                    <div class="postReadMore"><a href="{{ post.url }}">Read more</a></div>
+                </div>
+            {% endfor %}
+        </div>
+        
         <div class="clearfix margin-bottom-40"></div>
-
-        <!-- Service Blocks -->
-        <div class="margin-bottom-20"></div>
-        <div class="row margin-bottom-40">
-            <div class="col-md-3 col-sm-6">
-                <div class="service-block service-block-default">
-                    <i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
-                    <h2 class="heading-md">Creative Ideas</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine. Fusce dapibus</p>                        
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="service-block service-block-default">            
-                    <i class="icon-custom rounded-x icon-bg-dark fa fa-compress"></i>
-                    <h2 class="heading-md">Fully Responsive</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine. Fusce dapibus</p>
-                </div>
-            </div>            
-            <div class="col-md-3 col-sm-6">
-                <div class="service-block service-block-default">            
-                    <i class="icon-custom rounded-x icon-bg-dark icon-line icon-rocket"></i>
-                    <h2 class="heading-md">Launch Ready</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine. Fusce dapibus</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="service-block service-block-default">
-                    <i class="icon-custom rounded-x icon-bg-dark icon-line icon-support"></i>
-                    <h2 class="heading-md">Dedicated Support</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
-                </div>
-            </div>
-        </div>
-        <!-- End Service Blokcs -->
-     <div>
-     
-      <div class="headline"><h2>News</h2></div>
-      
-      <div class="clearfix margin-bottom-40"></div>
-     </div>
-
-       
-    </div><!--/container-->   
+    </div>
+    
+    </div><!--/container-->
     <!-- End Content Part -->
