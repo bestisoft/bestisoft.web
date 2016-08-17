@@ -116,3 +116,29 @@ p.post-meta {
 .service-block {
     height: 200px;
 }
+
+.services img
+{
+    width: 40px;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+.services .service-block 
+{
+    height: 250px;
+    margin-top: 20px;
+}
+
+.whyus img
+{
+    width: 40px;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+.whyus .service-block 
+{
+    height: 250px;
+    margin-top: 20px;
+}
